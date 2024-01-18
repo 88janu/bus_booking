@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                sh 'rm -rf '
-                sh 'git clone '
+                sh 'rm -rf bus_booking'
+                sh 'git clone https://github.com/88janu/bus_booking.git'
             }
         }
         stage('build') {
@@ -15,7 +15,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                
+                sh 'echo "deploying"'
+            }
                 
         }
     }
