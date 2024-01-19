@@ -46,7 +46,7 @@ stage('Deploy to JFrog Artifactory') {
                 script {
                     rtServer(
                         id: "Artifact",
-                        url: "http://http://65.2.127.138:8081/artifactory",
+                        url: "http://65.2.127.138:8081/artifactory",
                         username: "admin@123",
                         password: 'admin@123'
                     )
