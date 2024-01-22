@@ -8,13 +8,14 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                
+                gitBusBooking()
             }
         }
 
         stage('build') {
             steps {
                 script {
+			mavenBuild()
                     
                 }
             }
